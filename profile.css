@@ -1,0 +1,51 @@
+body{	background-color: #F7F7F7;}
+.header{ position:fixed;}
+
+.row{
+		position:absolute;
+		width: 100%;
+		top:0;}
+
+.container{	background-color:white; 
+		width:800px;
+		font-family:verdana; 
+		color:gray;
+		padding:10px;
+		margin:0 auto;
+		margin-top:0px;
+				top:15px;}
+
+.pic{
+		float:left;
+		border-style:outset;
+		border-width:1px;
+		box-shadow:10px 10px 5px #888888;}
+
+.rightaddress {	background-position:relative;
+		width:520px;
+		height:200px;
+		float:right;
+		background-color:white;
+		border-style:outset;
+		border-width:1px;
+		box-shadow: 10px 10px 5px #888888;}
+
+.icon {text-align: right;}
+
+#name	{	font-family:comic sans MS;
+		font-size:30px;
+		font-weight:bold;
+		text-align:left;
+		color:black;
+		padding-left:10px;}
+		
+
+#address {	
+	    font-family:comic sans MS;
+	    text-align:left;
+		padding-left:10px;}
+
+hr.rightaddress{ 	height:5px;
+			background-color:#00BFFF;
+			width:80;}
+		
