@@ -1,86 +1,128 @@
+<!DOCTYPE html >
 <html>
 <head>
-   <title>My Project</title>
-   <link href="css/bootstrap.min.css" rel="stylesheet">
-   <link rel="stylesheet" type="text/css" href="css/boostrap.css">
-   <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
-   <script src="/scripts/jquery.min.js"></script>
-   <script src="js/bootstrap.min.js"></script>
-   <link rel="stylesheet" type="text/css" href="profile.css">
+   <title>HTML5/CSS3 Media responsive</title>
+   <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+   <meta name="viewport" content="width=device-width initial-scale=1.0"/>
+   <link rel="stylesheet" href="profile.css" type="text/css" />
 </head>
-<body>
-<div class= "header">
-<div class="row">
-   <div class="panel panel-default" style= "background-color:#6A92D9; background-attachment:fixed;">
-   <div class="panel-body" align="center" >
-   <abbr title="Home"><a href="#left"><button type="button" class="btn btn-default btn-lg" class="scroll">
-   <span class="glyphicon glyphicon-home"></span></button></a>&nbsp;&nbsp;</abbr>
-   <abbr title="Profile"><a href="#profile"><button type="button" class="btn btn-default btn-lg" class="scroll">
-   <span class="glyphicon glyphicon-user"></span></button></a>&nbsp;&nbsp;
-   <abbr title="Professional Work History"><a href="#resume"><button type="button" class="btn btn-default btn-lg" class="scroll">
-   <span class="glyphicon glyphicon-align-justify"></span></button></a>&nbsp;&nbsp;
-   <abbr title="Engineering Design Projects"><a href="#projects"><button type="button" class="btn btn-default btn-lg" class="scroll">
-   <span class="glyphicon glyphicon-picture"></span></button></a>&nbsp;&nbsp;
-   <abbr title="Contact"><a href="#message"><button type="button" class="btn btn-default btn-lg" class="scroll">
-   <span class="glyphicon glyphicon-envelope"></span></button></a>
-   </div>
-   </div>
-</div>
-</div>
-<div class="container">
-   <div class="left">
-      <div class="pic">
-         <img src="akansha.jpg" alt="akansha" width="250" height="200">
+<body class="body">
+   <header class="mainHeader">
+      <img src="akansha.jpg">
+      <div class="myContact">
+         <h1><i>Akansha Raut</i></h1>
+         <p><i>akansharaut15@gmail.com</i></p>
+         <p><i>+91 7710087287</i></p>
       </div>
-      <div class="rightaddress">
-      <div class="icon">
-         <a target="_blank" href="https://www.facebook.com/akansha.bhopale"><img src="facebook.jpg" width="40" height="40" alt="facebook"></a>
-         <a target="_blank" href="https://www.linkedin.com/profile/view?id=142045319&trk=nav_responsive_tab_profile"><img src="linkdin.jpg" width="40" height="40" alt="linkedin"></a>
-         <a target="_blank" href="https://plus.google.com/u/1/107425559949894117049/posts"><img src="googleplus.jpg" width="40" height="40" alt="Google+"></a>
-      </div>
-                  <div id="name">Akansha Raut
-                  </div><hr>     
-                  <div id="address">
-                              <img src="email.jpg" width="20" height="20">akansharaut15@gmail.com <br>
-                              <img src="contact.jpg" width="20" height="20">+91-7710087287</p>
-                  </div> 
-      </div>
-   </div>
-  &nbsp;&nbsp;
-   <div class="profile"><h2><a id="profile">Profile:</a></h2>Seeking a position to utilize my skills and abilities in the Software Industry that offers professional growth while being resourceful, innovative and flexible.
-      <div class="profilecontent"><h4>HTML&CSS <hr>
-                                     Javascript<hr>
-                                     SQL<hr>
-                                     Windows&Linux<hr></h4>
-      </div>
-   </div>
-   <div class="details"><h2>Education Qualification:</h2>
-      <ul>
-         <li>B.E. in Information Technology from MIT Indore (RGPV UNIVERSITY) with 73.71% aggregate (2008-2012).</li>
-         <li>XII from MP Board with 80.66% (2008).</li>
-         <li>X from MP Board with 77.34% (2006).</li>
-      </ul>
-   </div>
-   <div class="publication"><h2>Publication:</h2>
-      <ul>
-         <li>Research Paper published on <q>Implementation of DNA algorithm for secure voice communication</q>. This paper is selected by IJSER (International Journal of Scientific& Engineering Research) publication with Paper id- I015401.</li>
-      </ul>
-   </div>
-   <div class="workingdetails"><h2><a id="resume">Professional Work History:</h2></a>
-      <h4>Sysnet Global Technologies:</h4> Lenovo Co-ordinator
-      <h4>Description</h4>Development of email templates, adding pictures and links to the same, which were being provided in the design using HTML, CSS and Javascript for the better representation.<br>
-      <h4>Tool Used:</h4>Dreamweaver,Apache Tomcat
-      <h4>ADFC Pvt. Ltd (HDFC Bank BackOffice):</h4>Portfolio Manager
-      <h4>Description</h4>Worked as portfolio manager at ADFC, Role was to take care of all facilities provided to an account holder. Facilities like Loan information, Credit card information, etc. Each customer is assigned to a portfolio manager for his all activities; customer can call any time and seek for help. We used tools like SAP to update the information updated by the account holder.<br>
-   </div>
-   <div class="projectprofile"><h2><a id="projects">Engineering Design Projects:</h2></a>
-      <h4>Project Title-</h4> <q>TPO cell management system</q>(Minor Project)
-      <h4>Description:</h4> This project provides information about companies which are coming in the college and student can register ourselves if he/she interested in this company. It consists of a large database which contains information about students.<br>
-      <h4>Technology:</h4>Java, Net beans 6.9, MySql and Dreamweaver.TPO cell Management System
-      <h4>Project Title-</h4><q>Voice DNA Encryption</q>(Major Project)<h4>Description-</h4>Voice DNA Encryption Application offers communication security that gives protection against information theft and eavesdropping for voice communication. Its purpose is to transfer voice from one system to another in encrypted form.
-      <h4>Technology:</h4> Java, Net beans 6.9, MySql.
-   </div>
-</div>
+      <nav>
+         <ul>
+            <li class= "active"><a href="#">Objective</a></li>
+            <li><a href="#">Education</a></li>
+            <li><a href="#">Professional Carrer</a></li>
+            <li><a href="#">Engineering</a></li>
+         </ul>
+      </nav>
+   </header>
+   <div class="mainContent">
+      <div class="content">
+         <article class="topContent">
+            <header>
+               <h2> <a href="#" title="first post">Objective</a></h2>
+            </header>
+               <content>
+                  <p>
+                     Seeking a position to utilize my skills and abilities in the Software Industry that offers professional growth while being resourceful, innovative and flexible. 
+                  </p>
+               </content>
+         </article>
+         <article class="middleContent">
+            <header>
+               <h2> <a href="#" title="second post">Education</a></h2>
+            </header>
+               <content>
+                  <p>
+                     <ul>
+                     <li>B.E. in Information Technology from MIT Indore (RGPV UNIVERSITY) with 73.71% aggregate(2008-2012).</li>
+                     <li>XII from MP Board with 80.66% (2008).</li>
+                     <li>X from MP Board with 77.34% (2006).</li>
+                     </ul>
+                  </p>
+               </content>
+         </article>
+         <article class="middleContent">
+            <header>
+               <h2> <a href="#" title="second post">Professional Carrer</a></h2>
+            </header>
+               <content>
+                  <p>
+                     <b>Sysnet Global Technologies:</b> Web Developer &ensp;&ensp;&ensp; (June 2013 - Nov 2013)</br>
+                     <i>Email Templates</i> </br>
+                     Development of email templates, adding pictures and links to the same, which were being provided in the design using HTML, CSS and Javascript for the better representation.</br>
+                     <b>Tool used</b>: Dreamweaver , Apache Tomcat
+                  </p>
+               </content>
+         </article>
+         <article class="bottomContent">
+            <header>
+               <h2> <a href="#" title="second post">Engineering Projects</a></h2>
+            </header>
+               <content>
+                  <p>
+                     <b>BE Major Project:</b>  &ensp;&ensp;&ensp; (Dec 2011 - May 2012)</br>
+                     <i>Voice DNA Encryption</i> </br>
+                     It is an application which offers communication security that gives protection against information theft and eavesdropping for voice communication. Its purpose is to transfer voice from one system to another in encrypted format. I contributed in design, development and quality assurance part of the project. The whole application was built in <b>Java</b> and we used <b>MySql</b> as the database to store the structured data.</br>
+                     <b>Tool used : </b> Net beans 6.9
+                  </p>
+                  <p>
+                     <b>BE Minor Project:</b>  &ensp;&ensp;&ensp; (June 2011 - Nov 2011)</br>
+                     <i>TPO cell management system</i> </br>
+                     This is a portal which provides information about companies which come in college for placement. Students can register to the company in which they are interested. It consists of a large database which contains information about students and companies. I mainly contributed in development and database design. We used <b>Java</b> to build the front-end and <b>MySql</b> to consume the structured data.</br>
+                     <b>Tool used : </b> Java, Net beans 6.9, MySql, Dreamweaver
+                  </p>
+               </content>
+         </article>
+
+      </div>   
+   </div> 
+   <aside class ="topSidebar">
+      <article>
+         <h2>Technical Skills</h2>
+         <p>
+            <ul>
+               <li> Data Structures, Database </li>
+               <li> C,C++, Java </li>
+               <li> HTML, CSS, Javascript </li>
+               <li> MS-Access, Mysql, Mongodb </li>
+               <li> Linux, Windows </li>
+               <li> Angularjs </li>
+            </ul>
+         </p>
+      </article>
+   </aside>
+    <aside class ="middleSidebar">
+      <article>
+         <h2>Curricular Activities</h2>
+            <ul>
+               <li> HCL carrier development center at Indore (J2EE, 45Days).</li>
+               <li> IBM certification in DB2 9 database and application fundamentals</li>
+               <li> Certified in final round of code knackers in Java.</li>
+            </ul>
+      </article>
+   </aside>
+    <aside class ="bottomSidebar">
+      <article>
+         <h2>Competencies</h2>
+         <p>
+            <ul>
+               <li> Adaptive and Innovative</li>
+               <li> Ability to grab quickly and to make out easily</li>
+               <li> Sincere and Hard Worker with good managerial skills</li>
+            </ul>
+         </p>
+      </article>
+   </aside>
+<footer class="mainFooter">
+   <p>Akansha Raut</p>
+</footer>
 </body>
 </html>
-

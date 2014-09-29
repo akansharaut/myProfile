@@ -1,51 +1,246 @@
-body{	background-color: #F7F7F7;}
-.header{ position:fixed;}
+body{
+	background-color: gray;
+	color: #000305;
+	font-size: 14px;
+	font-family: Arial, 'Lucida Sans Unicode';
+	line-height: 1.5;
+	text-align: left;
+}
+a{
+	text-decoration: none;
+}
 
-.row{
-		position:absolute;
+a:link, a:visited {
+	color: #CF5C3F;
+}
+
+a:hover, a:active{
+	background-color: #CF5C3F;
+	color: #FFF;
+}
+
+.body{
+	margin:0 auto;
+	width: 90%;
+	clear: both;
+}
+
+.mainHeader img{
+	width: 20%;
+	height: auto;
+	margin: 2% 0;
+}
+
+.myContact{
+	width: 50%;
+	height: auto;
+	float: right;
+	color: #FFE5BD;
+}
+
+.myContact h1{
+	font-size: 50px;
+	margin: 2% 0;
+}
+
+.myContact p{
+	font-size: 15px;
+	margin: 0 0%;
+}
+
+.mainHeader nav{
+	background-color: #666;
+	height: 40px;
+	border-radius: 5px;
+	-moz-border-radius:5px;
+	-webkit- border-radius: 5px;
+}
+
+.mainHeader nav ul
+{
+	list-style: none;
+	margin: 0 auto;
+}
+
+.mainHeader nav ul li {
+	display:inline;
+	float: left;	
+}
+
+
+.mainHeader nav a:link, .mainHeader nav a:visited{
+	color: #FFF;
+	display: inline-block;
+	padding: 10px 25px;
+	height: 20px;
+}
+
+.mainHeader nav a:hover, .mainHeader nav a:active,
+.mainHeader nav .active a:link, .mainHeader nav .active a:visited{
+	background-color: #CF5C3F;
+	text-shadow:none;
+}
+
+.mainHeader nav ul li a {
+	border-radius: 5px;
+	-moz-border-radius:5px;
+}
+
+.mainContent{
+	line-height: 25px;
+	/*border-radius: 5px;*/
+}
+
+.content{
+	width: 64%;
+	float:left;
+}
+
+.topContent{
+	background-color: #fff;
+	border-radius: 5px;
+	padding: 3% 4%;
+	margin-top: 2%
+}
+.bottomContent{
+	background-color: #fff;
+	border-radius: 5px;
+	padding: 3% 4%;
+	margin-top: 2%;
+}
+.middleContent{
+	background-color: #fff;
+	border-radius: 5px;
+	padding: 3% 4%;
+	margin-top: 2%;
+}
+
+.topSidebar{
+ 	width: 27%;
+ 	float: left;
+ 	background-color: #FFF;
+ 	border-radius: 5px;
+ 	margin-left: 3%;
+ 	margin-bottom: 2%;
+ 	margin-top: 1%;
+ 	padding: 2% 3%;
+}
+.middleSidebar{
+ 	width: 27%;
+ 	float: left;
+ 	background-color: #FFF;
+ 	border-radius: 5px;
+ 	margin-left: 3%;
+ 	margin-bottom: 2%;
+ 	padding: 2% 3%;
+ }
+
+.bottomSidebar{
+ 	width: 27%;
+ 	float: left;
+ 	background-color: #FFF;
+ 	border-radius: 5px;
+ 	margin-left: 3%;
+ 	margin-bottom: 2%;
+ 	padding: 2% 3%;
+}
+
+.mainFooter{
+	width: 100%;
+	height: 40px;
+	float: left;
+	border-radius: 5px;
+	/*-moz-border-radius:5px;*/
+	background-color: #666;
+	margin-bottom: 2%;
+	margin-top: 1%;
+}
+.mainFooter p {
+	margin: 1% auto;
+	color: #FFF;
+	padding-left: 20px;
+}
+
+@media screen and (max-width: 900px)
+
+{
+	.body {
+		width: 90%;
+		font-size: 95%;
+	}
+
+	.myContact {
+		margin: 1%;
 		width: 100%;
-		top:0;}
+		text-align: center;
+	}
+	.mainHeader img {
+		width: 100%;
+	}
+	.mainHeader nav{
+		height: 160px;
+		float: left;
+	}
+	.mainHeader nav ul {
+		padding-left: 0;
+	}
+	.mainHeader nav ul li{
+		width: 100%;
+		text-align:center;
+	}
 
-.container{	background-color:white; 
-		width:800px;
-		font-family:verdana; 
-		color:gray;
-		padding:10px;
-		margin:0 auto;
-		margin-top:0px;
-				top:15px;}
-
-.pic{
+	.mainHeader nav a:link, .mainHeader nav a:visited{
+		display: block; 	 	
+	}
+	
+	.content{
+		width: 100%;
 		float:left;
-		border-style:outset;
-		border-width:1px;
-		box-shadow:10px 10px 5px #888888;}
+		margin-top: 2%;
+	}
+	
+	.topContent{
+	margin-bottom: 5%;
+   }
+   
 
-.rightaddress {	background-position:relative;
-		width:520px;
-		height:200px;
-		float:right;
-		background-color:white;
-		border-style:outset;
-		border-width:1px;
-		box-shadow: 10px 10px 5px #888888;}
+	.bottomContent{
+	margin-bottom: 3%;
+	}
 
-.icon {text-align: right;}
+	.topSidebar,.middleSidebar,.bottomSidebar{
+	width: 94%;
+	margin: 2% 0 2% 0;
+	padding: 2% 3%;
+	}
+}
 
-#name	{	font-family:comic sans MS;
-		font-size:30px;
-		font-weight:bold;
-		text-align:left;
-		color:black;
-		padding-left:10px;}
-		
 
-#address {	
-	    font-family:comic sans MS;
-	    text-align:left;
-		padding-left:10px;}
 
-hr.rightaddress{ 	height:5px;
-			background-color:#00BFFF;
-			width:80;}
-		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
